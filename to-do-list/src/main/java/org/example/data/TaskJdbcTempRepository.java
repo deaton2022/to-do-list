@@ -21,14 +21,15 @@ public class TaskJdbcTempRepository implements TaskRepository {
     private final JdbcTemplate jdbcTemplate;
     @Override
     public List<Task> findAll() {
-    final String sql ="SELECT task_id, importance_id, task_name, task_description, due_date " +
-            "FROM task;";
+    final String sql ="SELECT * " +
+            "FROM task " +
+            "ORDER BY importance_id;";
         return jdbcTemplate.query(sql, new TaskMapper());
     }
 
     @Override
     public Task findById(int taskId) {
-        final String sql ="SELECT task_id, importance_id, task_name, task_description, due_date " +
+        final String sql ="SELECT * " +
                 "FROM task " +
                 "WHERE task_id = ?;";
          Task task = jdbcTemplate.query(sql, new TaskMapper(),taskId).stream().findFirst().orElse(null);
@@ -40,9 +41,10 @@ public class TaskJdbcTempRepository implements TaskRepository {
 
     @Override
     public List<Task> findByDueDate(LocalDate date) {
-        final String sql ="SELECT task_id, importance_id, task_name, task_description, due_date " +
+        final String sql ="SELECT * " +
                 " FROM task " +
-                " WHERE due_date = ? ;";
+                " WHERE due_date = ? " +
+                "ORDER BY importance_id ;";
         return jdbcTemplate.query(sql, new TaskMapper(),date);
     }
 

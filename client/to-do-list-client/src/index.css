@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: white;
+}
+h1{
+  /* color: azure; */
+  text-align: center;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+nav {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  margin: 20px;
+}
+
+nav a:hover {
+  color: lightgray;
+}
+
+nav button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+nav button:hover {
+  color: lightgray;
+}
+.my-4{
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  width: 60%;
+}
+th {
+  background-color: salmon;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid #ccc;
+  text-align: left;
+  border-radius: 10px;
+  text-align: center; /* Center the text horizontally */
+  
+}
+tr {
+  background-color: #e6e5e5;
+  border-radius: 5px;
+}
+
+/* Style for table cells */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  font-weight: bolder;
+  font-size: 30px;
+  text-align: center; /* Center the text horizontally */
+}
+.username {
+  font-size: 15px;
+  margin-left: 15 px;
+}
+.welcome {
+  font-style: oblique;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: center;
+  color: rgb(168, 94, 94);
+  
+}
+a {
+  text-decoration: none;
+  color: #fb98ac;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3;
+}
+/* Style for buttons */
+button {
+  background-color: #ffffff;
+  color: salmon;
+  border: 1px solid black;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: rgb(255, 249, 249);
+  color:rgb(168, 94, 94);
+}
+
+/* Style for the container */
+.login-container {
+  background-color: salmon;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the form header */
+.login-header {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Style for error messages */
+.login-error {
+  color: white;
+  background-color: #ff7070;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style for labels */
+.login-label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.login-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Style for link */
+.login-link {
+  text-align: center;
+  color: white;
+}
+
+/* Style for login button */
+.login-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.login-button:hover {
+  background-color: #555;
+}
+/* Style for the container */
+.signup-container {
+   background-color: salmon;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Style for the form header */
+.signup-header {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Style for error messages */
+.signup-errors {
+  color: black;
+  background-color: #ff7070;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+list-style-type:none;
+}
+
+.signup-errors li {
+  margin-bottom: 5px;
+}
+
+/* Style for labels */
+.signup-label {
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style for input fields */
+.signup-input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Style for submit button */
+.signup-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #555;
+}
+
+/* Style for cancel button */
+.signup-cancel-button {
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.reddit-thread {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  font-size: x-large;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+ 
+
+}
+
+.post {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 20px 0; /* Add margin to create space between list items */
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+}
+/* Remove bullet points from list items */
+li {
+  list-style: none;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+  border-radius: 10px;
+}
+
+.search-bar-title{
+  font-size: large;
+  margin-top: 10px;
+  color: black;
+  font-weight: bold;
+  float: left;
+}
+
+#input-topic {
+  width: 300px; /* Adjust the width as needed */
+  height:20px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 20px; /* Add rounded edges */
+  outline-color: #333;
+  font-weight: bold;
+  resize: none; /* Prevent manual resizing */
+}
+#topic{
+  font-size: x-large;
+  margin-bottom: 10px;
+  color: black;
+  outline: #000000;
+  font-weight: bold;
+  display: block;
+}
+#body{
+  font-size: x-large;
+  margin-bottom: 10px;
+  color: black;
+  outline: #080808;
+  font-weight: bold;
+  display: block;
+}
+label:after { content: ": " }
+
+#answer-body{
+  font-size: x-large;
+  margin-bottom: 10px;
+  color: black;
+  outline: #080808;
+  font-weight: bold;
+}
+
+.form-control {
+  width: 75%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  
+}
