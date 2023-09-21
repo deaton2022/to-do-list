@@ -129,146 +129,20 @@ button {
   transition: background-color 0.3s ease;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0px 0px 29px -10px rgba(156,156,156,1);
 }
 
 button:hover {
   background-color: rgb(255, 249, 249);
-  color:rgb(168, 94, 94);
+  color:aquamarine;
+  border-radius: 20px;
+  border-color: aquamarine;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px) perspective(100px);
 }
 
 /* Style for the container */
-.login-container {
-  background-color: salmon;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  margin: 0 auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Style for the form header */
-.login-header {
-  text-align: center;
-  margin-bottom: 10px;
-  color: white;
-}
-
-/* Style for error messages */
-.login-error {
-  color: white;
-  background-color: #ff7070;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-/* Style for labels */
-.login-label {
-  color: white;
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* Style for input fields */
-.login-input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-/* Style for link */
-.login-link {
-  text-align: center;
-  color: white;
-}
-
-/* Style for login button */
-.login-button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-
-}
-
-.login-button:hover {
-  background-color: #555;
-}
-/* Style for the container */
-.signup-container {
-   background-color: salmon;
-  padding: 20px;
-  border-radius: 10px;
-  width: 300px;
-  margin: 0 auto;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Style for the form header */
-.signup-header {
-  text-align: center;
-  margin-bottom: 10px;
-  color: white;
-}
-
-/* Style for error messages */
-.signup-errors {
-  color: black;
-  background-color: #ff7070;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-list-style-type:none;
-}
-
-.signup-errors li {
-  margin-bottom: 5px;
-}
-
-/* Style for labels */
-.signup-label {
-  color: white;
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* Style for input fields */
-.signup-input {
-  width: 100%;
-  padding: 8px;
-  border-radius: 5px;
-  border: none;
-  margin-bottom: 10px;
-}
-
-/* Style for submit button */
-.signup-button {
-  background-color: #333;
-  color: white;
-  border: none;
-  padding: 10px;
-  width: 100%;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.signup-button:hover {
-  background-color: #555;
-}
-
-/* Style for cancel button */
-.signup-cancel-button {
-  margin-top: 10px;
-  width: 100%;
-  border: 1px solid black;
-}
 
 .container {
   max-width: 800px;
